@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 { 
-   // way 1 
+   // way 1  
    /*
    freopen("input.txt", "r", stdin);
    freopen("output.txt", "w", stdout);
-
+ 
    string s;
    getline(cin, s);
    cout<<s<<"\n";
