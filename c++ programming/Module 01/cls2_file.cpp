@@ -3,7 +3,7 @@
 using namespace std;
 
 int main()
-{
+{ 
    // way 1 
    /*
    freopen("input.txt", "r", stdin);
