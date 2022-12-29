@@ -4,7 +4,7 @@ int main()
 {
   int s,p; 
   cin>>s>>p; 
-	string str;
+	string str; 
   cin>>str;
 
 	reverse(str.begin()+(s-1), str.begin()+p);
