@@ -30,7 +30,7 @@ public:
     {
   
     }
-
+ 
     void print_information()
     {
         cout<<name<<" "<<std_id<<" "<<age<<" "<<fathers_name<<" "<<mothers_name<<endl;
