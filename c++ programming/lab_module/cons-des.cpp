@@ -21,7 +21,7 @@ public:
 
     Student(string name, int std_id, int age)
     {
-        this->name = name;
+        this->name = name; 
         this->std_id = std_id;
         this->age = age;
     }
