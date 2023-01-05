@@ -29,7 +29,7 @@ public:
     Student()
     {
    
-    }
+    } 
  
     void print_information()
     {
