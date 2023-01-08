@@ -15,5 +15,5 @@ int main()
   cout<<sum<<"\n";
   cout<<mul<<"\n";
 
-  return 0;
+  return 0; 
 }
