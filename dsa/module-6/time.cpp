@@ -5,6 +5,7 @@ int main()
 {
   int a,b,c;
   cin>>a>>b>>c;
+
   int maxi = max({a,b,c});
   int mini = min({a,b,c});
   int sum = a+b+c;
@@ -14,8 +15,5 @@ int main()
   cout<<sum<<"\n";
   cout<<mul<<"\n";
 
-  
-  
-  system("pause");
   return 0;
 }
