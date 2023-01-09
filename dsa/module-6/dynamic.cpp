@@ -65,7 +65,7 @@ public:
       {
          cout<<"Error "<<idx<<" is out of bound\n";
          return -1;
-      }  
+      }   
       return arr[idx];
    }
    // Time complexity O(sz)
