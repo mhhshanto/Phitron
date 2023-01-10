@@ -11,7 +11,7 @@ int main()
     vector<int>d(n);
     for(int i=1;i<=n; i++)
         for(int j=i ; j<=n ; j = j+i )
-            d.push_back(i);
+            d.push_back(i); 
 
     int sz = d.size();
     cout<<sz<<endl;
