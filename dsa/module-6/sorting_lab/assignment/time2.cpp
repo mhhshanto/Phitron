@@ -5,7 +5,7 @@ using namespace std;
 //Time Complexity : O(n^2)
 
 int main()
-{
+{ 
     int n;
     cin>>n;
     vector<int>d(n);
