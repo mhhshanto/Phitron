@@ -10,7 +10,7 @@ vector<int>merge_sort(vector<int>a){
 
 int main()
 {
-  
+   
   
   system("pause");
   return 0;
