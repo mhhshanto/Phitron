@@ -32,7 +32,7 @@ while (a!= NULL)
   a = a->nxt;
 }
 cout<<"\n";
-
+ 
   }
   void SearchDistinctValue(int value){
 
