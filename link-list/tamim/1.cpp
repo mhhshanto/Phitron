@@ -107,7 +107,7 @@ int main()
    cout<<l.getSize()<< "\n";
   l.Traverse();
   l.InsertAtHead(20);
-   cout<<l.getSize()<< "\n"; 
+   cout<<l.getSize()<< "\n";  
   l.Traverse();
   l.InsertAtHead(1);
   l.InsertAtAnyIndex(3,3999);
