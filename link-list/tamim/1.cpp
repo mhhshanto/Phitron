@@ -112,7 +112,7 @@ int main()
   l.InsertAtHead(1);
   l.InsertAtAnyIndex(3,3999);
   l.Traverse();
-  l.DeleteAtHead(); 
+  l.DeleteAtHead();  
   l.DeleteAtHead();
   l.DeleteAtHead();
   l.DeleteAtHead();
