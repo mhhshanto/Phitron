@@ -94,28 +94,64 @@ class LinkedList{
     head = a->nxt;
     delete a;
   }
+  void DeleteAnyIndex(int index){
+    if(index < 0 || index > sz-1){
+      return;
+    }
+    if(index == 0){
+      DeleteAtHead();
+      return;
+    }
+    sz--;
+    node *a = head;
+    int cur_index = 0;
+    while(cur_index != index-1){
+      a = a->nxt;
+      cur_index++;
+    }
+node *b = a->nxt;
+a->nxt = b->nxt;
+delete b;
+  }
+  void InsertAfterValue(int value , int data){
+    node *a = head;
+    while (a != NULL)
+    {
+      if(a->data == value){
+        break;
+      }
+      a = a->nxt;
+    }
+    if( a == NULL){
+      cout<< value << "does not exist in the linked-list. \n";
+      return;
+    }
+    sz++;
+    node *newnode = CreateNewNode(data);
+    newnode ->nxt = a->nxt;
+    a ->nxt = newnode;
+  }
+  void ReversePrint2(node *a){
+    if(a == NULL){
+      return;
+    }
+    ReversePrint2(a->nxt);
+    cout<<a->data<<" ";
+  }
+  void ReversePrint(){
+    ReversePrint2(head);
+    cout<<"\n";
+  }
 };
 
 int main()
 {
   LinkedList l;
-  l.Traverse();
   l.InsertAtHead(10);
-   cout<<l.getSize()<< "\n";
-  l.Traverse();
   l.InsertAtHead(30);
-   cout<<l.getSize()<< "\n";
-  l.Traverse();
   l.InsertAtHead(20);
-   cout<<l.getSize()<< "\n";  
-  l.Traverse();
   l.InsertAtHead(1);
-  l.InsertAtAnyIndex(3,3999);
-  l.Traverse();
-  l.DeleteAtHead();  
-  l.DeleteAtHead();
-  l.DeleteAtHead();
-  l.DeleteAtHead();
-   cout<<l.getSize()<< "\n";
+   l.Traverse();
+   l.ReversePrint();
   return 0;
 }
