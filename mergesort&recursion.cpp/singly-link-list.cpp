@@ -37,7 +37,7 @@ class LinkedList{
     cout<<"\n";
   }
   void Insert(int index, int data){
-    
+
   }
 };
 int main()
@@ -49,6 +49,6 @@ int main()
  l.InsertAtHead(303);
  l.InsertAtHead(3035);
  l.Traverse();
-
+ 
   return 0;
 }
